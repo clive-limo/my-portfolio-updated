@@ -1,9 +1,6 @@
 import type { ReactNode } from 'react';
 import NavBar from "@/components/NavBar"
 
-
-import { AppConfig } from '@/utils/AppConfig';
-
 type IMainProps = {
   meta?: ReactNode;
   children: ReactNode;
