@@ -2,6 +2,7 @@
 
 import clsx from 'clsx';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
 
@@ -9,6 +10,8 @@ export default function NavBar() {
   const nameLogo = '<clive_limo/>';
 
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathName = usePathname();
+
   return (
     <nav className="sticky top-0 z-10 my-4 flex w-full flex-col bg-primaryDark">
       <div className="invisible m-0 flex w-0 flex-row lg:visible lg:my-4 lg:w-full">
@@ -66,7 +69,10 @@ export default function NavBar() {
         >
           <li className="my-auto flex justify-center">
             <Link
-              className="rounded-md p-3 text-white hover:bg-primaryLight"
+              className={clsx(
+                'rounded-md p-3 text-white hover:bg-primaryLight',
+                pathName === '/' ? 'bg-primaryLight' : 'bg-none',
+              )}
               href="/"
               onClick={() => setMenuOpen(!menuOpen)}
             >
@@ -75,7 +81,10 @@ export default function NavBar() {
           </li>
           <li className="my-auto flex justify-center">
             <Link
-              className="rounded-md p-3 text-white hover:bg-primaryLight"
+              className={clsx(
+                'rounded-md p-3 text-white hover:bg-primaryLight',
+                pathName === '/#about' ? 'bg-primaryLight' : 'bg-none',
+              )}
               href="#about"
               onClick={() => setMenuOpen(!menuOpen)}
             >
@@ -84,7 +93,10 @@ export default function NavBar() {
           </li>
           <li className="my-auto flex justify-center">
             <Link
-              className="rounded-md p-3 text-white hover:bg-primaryLight"
+              className={clsx(
+                'rounded-md p-3 text-white hover:bg-primaryLight',
+                pathName === '/#work' ? 'bg-primaryLight' : 'bg-none',
+              )}
               href="#work"
               onClick={() => setMenuOpen(!menuOpen)}
             >
@@ -93,7 +105,10 @@ export default function NavBar() {
           </li>
           <li className="my-auto flex justify-center">
             <Link
-              className="rounded-md p-3 text-white hover:bg-primaryLight"
+              className={clsx(
+                'rounded-md p-3 text-white hover:bg-primaryLight',
+                pathName === '/#projects' ? 'bg-primaryLight' : 'bg-none',
+              )}
               href="#projects"
               onClick={() => setMenuOpen(!menuOpen)}
             >
