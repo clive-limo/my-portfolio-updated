@@ -2,6 +2,8 @@ import '@/styles/global.css';
 
 import type { Metadata } from 'next';
 
+import { JobContextProvider } from '@/app/context/StateContext';
+
 export const metadata: Metadata = {
   icons: [
     {
@@ -33,8 +35,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className="bg-primaryDark">{children}</body>
-    </html>
+    <JobContextProvider>
+      <html lang="en">
+        <body className="bg-primaryDark">{children}</body>
+      </html>
+    </JobContextProvider>
   );
 }

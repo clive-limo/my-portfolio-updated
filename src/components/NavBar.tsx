@@ -10,7 +10,7 @@ export default function NavBar() {
 
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <nav className="sticky top-0 my-4 flex w-full flex-col bg-primaryDark">
+    <nav className="sticky top-0 z-10 my-4 flex w-full flex-col bg-primaryDark">
       <div className="invisible m-0 flex w-0 flex-row lg:visible lg:my-4 lg:w-full">
         <h1 className="font-poppins text-2xl font-bold">{nameLogo}</h1>
         <ul className="flex h-full w-full flex-row justify-end gap-16 text-sm font-semibold">

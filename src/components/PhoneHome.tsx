@@ -1,11 +1,19 @@
+import Image from 'next/image';
 import { AiOutlineGithub, AiOutlineLinkedin } from 'react-icons/ai';
 import { IoMailOutline } from 'react-icons/io5';
 
 export default function PhoneHome() {
   return (
     <section className="visible w-full md:hidden md:w-0">
-      <div className="mx-auto flex h-[155px] w-[155px] justify-center rounded-full bg-gradient-to-tr from-accentGreen to-accentBlue bg-clip-padding p-2">
-        <p>image</p>
+      <div className="relative mx-auto flex h-[155px] w-[155px] justify-center rounded-full bg-gradient-to-tr from-accentGreen to-accentBlue bg-clip-padding">
+        <div className="relative z-0 m-auto h-[145px] w-[145px] overflow-hidden rounded-full bg-primaryDark/80">
+          <Image
+            src="/assets/images/clive-portrait.png"
+            alt="clive animation"
+            layout="fill"
+            objectFit="contain"
+          />
+        </div>
       </div>
       <div className="mb-10 mt-5 flex w-full flex-row justify-center gap-2">
         <IoMailOutline className="text-4xl" />
@@ -26,7 +34,7 @@ export default function PhoneHome() {
           the MERN tech stack.
         </p>
       </div>
-      <div className="flex flex-col">
+      <div className="flex flex-col gap-4">
         <div className="my-auto">
           <h2 className="mt-3 text-center text-3xl font-bold text-white">
             What I Am Great At
