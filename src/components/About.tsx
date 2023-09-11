@@ -33,6 +33,8 @@ export default function About() {
             alt="stick man doodle"
             layout="fill"
             objectFit="contain"
+            height={0}
+            width={0}
           />
         </div>
       </div>

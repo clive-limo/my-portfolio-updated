@@ -27,6 +27,8 @@ export default function Home() {
                 alt="clive animation"
                 layout="fill"
                 objectFit="contain"
+                height={0}
+                width={0}
               />
             </div>
           </div>
