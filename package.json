@@ -3,7 +3,7 @@
   "version": "3.20.0",
   "scripts": {
     "dev": "next dev",
-    "build": "npm run build",
+    "build": "nexts build",
     "start": "next start",
     "build-stats": "cross-env ANALYZE=true npm run build",
     "clean": "rimraf .next .swc out coverage",
@@ -136,6 +136,5 @@
       "@semantic-release/git",
       "@semantic-release/github"
     ]
-  },
-  "author": "Ixartz (https://github.com/ixartz)"
+  }
 }
