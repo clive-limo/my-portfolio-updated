@@ -36,15 +36,17 @@ export default function Home() {
             <h2 className="mt-10 text-3xl font-bold text-white">Profile</h2>
             <p className="mt-1 text-lg text-zinc-500">
               I am a versatile{' '}
-              <span className="text-accentBlue">
+              <span className="font-bold text-accentBlue">
                 Full-Stack Software Developer
               </span>{' '}
-              and <span className="text-accentGreen">UI/UX Designer</span>
+              and{' '}
+              <span className="font-bold text-accentGreen">
+                UI/UX Designer{' '}
+              </span>
               with a passion for creating seamless digital experiences. With
-              expertise in the <span className="text-accentBlue">
-                MERN
-              </span>{' '}
-              tech stack.
+              expertise in the{' '}
+              <span className="font-bold text-accentBlue">MERN</span> tech
+              stack.
             </p>
           </div>
           <div className="flex flex-col">
@@ -82,9 +84,9 @@ export default function Home() {
               At
             </h2>
             <p className="mt-1 max-w-[600px] text-lg text-zinc-500 md:mr-5 lg:pr-7">
-              I excel at problem-solving and creative thinking, leveraging my
-              skills to craft efficient and user-centric digital solutions that
-              drive engagement and satisfaction.
+              I excel at collaboration, problem-solving and creative thinking,
+              leveraging my skills to craft efficient and user-centric digital
+              solutions that drive engagement and satisfaction.
             </p>
           </div>
           <div className="mr-7 h-full w-64 overflow-hidden rounded-2xl bg-primaryLight hover:shadow-xl hover:shadow-accentBlue/30">
