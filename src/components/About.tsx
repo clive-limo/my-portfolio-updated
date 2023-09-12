@@ -22,8 +22,8 @@ export default function About() {
           and collaborate seamlessly with UI/UX teams to ensure the perfect
           blend of aesthetics and functionality. When it comes to the backend, I
           have experience with a variety of languages and frameworks including
-          Python, Node.js, and Ruby. I am well-versed in database systems like
-          MySQL, PostgreSQL, and MongoDB, allowing me to create robust and
+          Python, Node.js, and NextJS. I am also well-versed in database systems
+          like MySQL, PostgreSQL, and MongoDB, allowing me to create robust and
           scalable backend solutions for data management, authentication, and
           communication.
         </p>

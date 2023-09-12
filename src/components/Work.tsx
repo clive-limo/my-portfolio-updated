@@ -56,18 +56,18 @@ export default function Work() {
         <div className="my-10 rounded-lg bg-primaryLight lg:w-60">
           <JobCards
             title="Chemtron Enterprise"
-            start="July 12th, 2020"
-            end="April 27th, 2021"
+            start="February, 2022"
+            end="Present"
           />
           <JobCards
             title="Prolox Solutions"
-            start="July 12th, 2020"
-            end="April 27th, 2021"
+            start="December, 2020"
+            end="November, 2021"
           />
           <JobCards
             title="Service Delivery Mandera"
-            start="July 12th, 2020"
-            end="April 27th, 2021"
+            start="April, 2020"
+            end="November, 2020"
           />
         </div>
         <div className=" mx-4 flex max-h-screen flex-col overflow-y-hidden md:mt-10 lg:m-10">

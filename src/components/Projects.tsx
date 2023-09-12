@@ -2,7 +2,7 @@ import ProjectsCard from './ProjectsCard';
 
 export default function Projects() {
   return (
-    <section className="h-screen w-full" id="projects">
+    <section className="w-full" id="projects">
       <h1 className="pt-20 text-5xl font-extrabold text-white">Projects</h1>
       <div className="mt-5 flex flex-col gap-3 lg:grid lg:grid-cols-2 lg:gap-8">
         <ProjectsCard

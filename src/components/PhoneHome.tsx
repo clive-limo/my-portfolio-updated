@@ -16,9 +16,19 @@ export default function PhoneHome() {
         </div>
       </div>
       <div className="mb-10 mt-5 flex w-full flex-row justify-center gap-2">
-        <IoMailOutline className="text-4xl" />
-        <AiOutlineGithub className="text-4xl" />
-        <AiOutlineLinkedin className="text-4xl" />
+        <a href="mailto:limoclive01@gmail.com">
+          <IoMailOutline className="text-4xl hover:text-accentBlue hover:ease-in-out" />
+        </a>
+        <a target="_blank" rel="noopener" href="https://github.com/clive-limo">
+          <AiOutlineGithub className="text-4xl hover:text-accentBlue hover:ease-in-out" />{' '}
+        </a>
+        <a
+          target="_blank"
+          rel="noopener"
+          href="https://www.linkedin.com/in/clive-limo-66aa881a3/"
+        >
+          <AiOutlineLinkedin className="text-4xl hover:text-accentBlue hover:ease-in-out" />
+        </a>
       </div>
       <h1 className="bg-gradient-to-tr from-accentGreen to-accentBlue bg-clip-text text-center text-3xl font-extrabold leading-relaxed text-transparent md:text-4xl">
         Hi, I&apos;m Clive, I create digital solutions learning and growing with
@@ -45,21 +55,21 @@ export default function PhoneHome() {
             drive engagement and satisfaction.
           </p>
         </div>
-        <div className="group mt-2 w-full rounded-2xl bg-primaryLight p-2 transition duration-150 ease-in-out hover:bg-accentBlue">
-          <h3 className="mt-5 w-full text-center font-bold text-white group-hover:-translate-y-1.5">
+        <div className="mt-2 w-full rounded-2xl bg-primaryLight p-2">
+          <h3 className="mt-5 w-full text-center font-bold text-white">
             Web Development
           </h3>
-          <p className=" py-3 text-center text-sm font-normal text-zinc-500 group-hover:invisible">
+          <p className=" py-3 text-center text-sm font-normal text-zinc-500">
             I specialize in developing dynamic web applications using the latest
             technologies, ensuring seamless functionality and exceptional user
             experiences.
           </p>
         </div>
-        <div className="group mt-2 w-full rounded-2xl bg-primaryLight transition duration-150 ease-in-out hover:bg-accentGreen">
-          <h3 className="mt-5 w-full text-center font-bold text-white group-hover:-translate-y-1.5">
+        <div className="mt-2 w-full rounded-2xl bg-primaryLight">
+          <h3 className="mt-5 w-full text-center font-bold text-white">
             UI/UX Design
           </h3>
-          <p className=" py-3 text-center text-sm font-normal text-zinc-500 group-hover:invisible">
+          <p className=" py-3 text-center text-sm font-normal text-zinc-500">
             I am also well versed in crafting intuitive and visually captivating
             user interfaces, enhancing user journeys through thoughtful design
             and usability principles.
