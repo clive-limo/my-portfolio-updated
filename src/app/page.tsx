@@ -52,9 +52,23 @@ export default function Home() {
               Let&apos;s Connect
             </h2>
             <div className="flex flex-row gap-2">
-              <IoMailOutline className="text-4xl hover:scale-110  hover:ease-in-out" />
-              <AiOutlineGithub className="text-4xl hover:scale-110  hover:ease-in-out" />
-              <AiOutlineLinkedin className="text-4xl hover:scale-110  hover:ease-in-out" />
+              <a href="mailto:limoclive01@gmail.com">
+                <IoMailOutline className="text-4xl hover:scale-110  hover:text-accentBlue hover:ease-in-out" />
+              </a>
+              <a
+                target="_blank"
+                rel="noopener"
+                href="https://github.com/clive-limo"
+              >
+                <AiOutlineGithub className="text-4xl hover:scale-110  hover:text-accentBlue hover:ease-in-out" />
+              </a>
+              <a
+                target="_blank"
+                rel="noopener"
+                href="https://www.linkedin.com/in/clive-limo-66aa881a3/"
+              >
+                <AiOutlineLinkedin className="text-4xl hover:scale-110  hover:text-accentBlue hover:ease-in-out" />
+              </a>
             </div>
           </div>
         </div>

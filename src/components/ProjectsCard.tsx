@@ -56,15 +56,17 @@ export default function ProjectsCard({
           <Link
             target="_blank"
             href={url}
-            className="flex h-full w-full flex-row justify-end"
+            className="group my-auto flex h-full w-full flex-row justify-end"
             rel="noopener noreferer"
           >
-            <p className="my-auto text-lg">Visit</p>{' '}
-            <RxExternalLink className="my-auto text-2xl" />
+            <p className="my-auto text-sm font-bold group-hover:scale-105 group-hover:text-accentGreen">
+              Visit
+            </p>{' '}
+            <RxExternalLink className="my-auto text-2xl font-bold group-hover:scale-105 group-hover:text-accentGreen" />
           </Link>
         ) : (
           <div className="flex h-full w-full flex-row justify-end">
-            <p className="my-auto rounded-lg bg-primaryLight p-2 text-lg">
+            <p className="my-auto rounded-lg border-[1px] border-zinc-400 p-2 text-sm font-bold hover:bg-accentGreen/30">
               Coming Soon
             </p>{' '}
           </div>
