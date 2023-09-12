@@ -1,5 +1,7 @@
 import '@/styles/global.css';
 
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { Analytics } from '@vercel/analytics/react';
 import type { Metadata } from 'next';
 
 import { JobContextProvider } from '@/app/context/StateContext';
@@ -37,7 +39,10 @@ export default function RootLayout({
   return (
     <JobContextProvider>
       <html lang="en">
-        <body className="bg-primaryDark">{children}</body>
+        <body className="bg-primaryDark">
+          {children}
+          <Analytics />{' '}
+        </body>
       </html>
     </JobContextProvider>
   );
