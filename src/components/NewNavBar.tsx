@@ -22,7 +22,7 @@ export default function NewNavBar() {
                 "rounded-full px-10 py-5 font-lufga text-lg text-white hover:bg-primaryLight",
                 pathName === "/"
                   ? "bg-accentOrange font-bold"
-                  : "bg-none font-normal",
+                  : "bg-none font-normal"
               )}
               href="/"
             >
@@ -88,14 +88,14 @@ export default function NewNavBar() {
         <ul
           className={clsx(
             "z-10 flex flex-col justify-center gap-2 text-sm font-semibold",
-            menuOpen ? "visible size-full" : "invisible size-0",
+            menuOpen ? "visible size-full" : "invisible size-0"
           )}
         >
           <li className="my-auto flex justify-center">
             <Link
               className={clsx(
                 "rounded-md p-3 text-white hover:bg-primaryLight",
-                pathName === "/" ? "bg-primaryLight" : "bg-none",
+                pathName === "/" ? "bg-primaryLight" : "bg-none"
               )}
               href="/"
               onClick={() => setMenuOpen(!menuOpen)}
@@ -107,7 +107,7 @@ export default function NewNavBar() {
             <Link
               className={clsx(
                 "rounded-md p-3 text-white hover:bg-primaryLight",
-                pathName === "/#about" ? "bg-primaryLight" : "bg-none",
+                pathName === "/#about" ? "bg-primaryLight" : "bg-none"
               )}
               href="#about"
               onClick={() => setMenuOpen(!menuOpen)}
@@ -119,7 +119,7 @@ export default function NewNavBar() {
             <Link
               className={clsx(
                 "rounded-md p-3 text-white hover:bg-primaryLight",
-                pathName === "/#work" ? "bg-primaryLight" : "bg-none",
+                pathName === "/#work" ? "bg-primaryLight" : "bg-none"
               )}
               href="#work"
               onClick={() => setMenuOpen(!menuOpen)}
@@ -131,7 +131,7 @@ export default function NewNavBar() {
             <Link
               className={clsx(
                 "rounded-md p-3 text-white hover:bg-primaryLight",
-                pathName === "/#projects" ? "bg-primaryLight" : "bg-none",
+                pathName === "/#projects" ? "bg-primaryLight" : "bg-none"
               )}
               href="#projects"
               onClick={() => setMenuOpen(!menuOpen)}

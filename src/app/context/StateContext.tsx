@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import type { Dispatch, SetStateAction } from 'react';
-import { createContext, useContext, useState } from 'react';
+import type { Dispatch, SetStateAction } from "react";
+import { createContext, useContext, useState } from "react";
 
 interface JobProps {
   isOpen: string;
@@ -9,8 +9,8 @@ interface JobProps {
 }
 
 const JobContext = createContext<JobProps>({
-  isOpen: 'Chemtron Enterprise',
-  setIsOpen: (): string => 'Chemtron Enterprise',
+  isOpen: "Chemtron Enterprise",
+  setIsOpen: (): string => "Chemtron Enterprise",
 });
 
 export const JobContextProvider = ({
@@ -18,7 +18,7 @@ export const JobContextProvider = ({
 }: {
   children: React.ReactNode;
 }) => {
-  const [isOpen, setIsOpen] = useState('Chemtron Enterprise');
+  const [isOpen, setIsOpen] = useState("Chemtron Enterprise");
 
   return (
     // eslint-disable-next-line react/jsx-no-constructed-context-values

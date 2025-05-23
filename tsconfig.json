@@ -36,6 +36,16 @@
     "isolatedModules": true,
     "incremental": true,
 
+    "types": [
+      "jest",
+      "node",
+      "semver",
+      "aria-query",
+      "babel__generator",
+      "babel__traverse",
+      "sizzle"
+    ],
+
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],

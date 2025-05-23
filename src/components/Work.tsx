@@ -17,7 +17,7 @@ export function JobCards({ title, start, end }: IProps) {
     <div
       className={clsx(
         "w-full p-3 hover:bg-accentGreen/5",
-        isOpen === title ? "bg-accentGreen/20" : "bg-none",
+        isOpen === title ? "bg-accentGreen/20" : "bg-none"
       )}
       onClick={() => setIsOpen(title)}
     >
@@ -82,7 +82,7 @@ export default function Work() {
               "list-disc",
               isOpen === "Service Delivery Mandera"
                 ? "visible my-4"
-                : "invisible size-0",
+                : "invisible size-0"
             )}
           >
             {ServiceTasks.map((task) => (
@@ -99,7 +99,7 @@ export default function Work() {
               "list-disc",
               isOpen === "Prolox Solutions"
                 ? "visible my-4"
-                : "invisible size-0",
+                : "invisible size-0"
             )}
           >
             {proloxTasks.map((task) => (
@@ -116,7 +116,7 @@ export default function Work() {
               "list-disc",
               isOpen === "Chemtron Enterprise"
                 ? "visible my-4"
-                : "invisible w-0",
+                : "invisible w-0"
             )}
           >
             {chemtronTasks.map((task) => (

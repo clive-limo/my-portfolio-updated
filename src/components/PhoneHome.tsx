@@ -1,12 +1,12 @@
-import Image from 'next/image';
-import { AiOutlineGithub, AiOutlineLinkedin } from 'react-icons/ai';
-import { IoMailOutline } from 'react-icons/io5';
+import Image from "next/image";
+import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
+import { IoMailOutline } from "react-icons/io5";
 
 export default function PhoneHome() {
   return (
     <section className="visible w-full md:hidden md:w-0">
-      <div className="relative mx-auto flex h-[155px] w-[155px] justify-center rounded-full bg-gradient-to-tr from-accentGreen to-accentBlue bg-clip-padding">
-        <div className="relative z-0 m-auto h-[145px] w-[145px] overflow-hidden rounded-full bg-primaryDark/80">
+      <div className="relative mx-auto flex size-[155px] justify-center rounded-full bg-gradient-to-tr from-accentGreen to-accentBlue bg-clip-padding">
+        <div className="relative z-0 m-auto size-[145px] overflow-hidden rounded-full bg-primaryDark/80">
           <Image
             src="/assets/images/clive-portrait.png"
             alt="clive animation"
@@ -20,7 +20,7 @@ export default function PhoneHome() {
           <IoMailOutline className="text-4xl hover:text-accentBlue hover:ease-in-out" />
         </a>
         <a target="_blank" rel="noopener" href="https://github.com/clive-limo">
-          <AiOutlineGithub className="text-4xl hover:text-accentBlue hover:ease-in-out" />{' '}
+          <AiOutlineGithub className="text-4xl hover:text-accentBlue hover:ease-in-out" />{" "}
         </a>
         <a
           target="_blank"

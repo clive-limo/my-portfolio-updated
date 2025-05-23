@@ -1,13 +1,13 @@
-'use client';
+"use client";
 
-import clsx from 'clsx';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { useState } from 'react';
-import { AiOutlineMenu } from 'react-icons/ai';
+import clsx from "clsx";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useState } from "react";
+import { AiOutlineMenu } from "react-icons/ai";
 
 export default function NavBar() {
-  const nameLogo = '<clive_limo/>';
+  const nameLogo = "<clive_limo/>";
 
   const [menuOpen, setMenuOpen] = useState(false);
   const pathName = usePathname();
@@ -16,7 +16,7 @@ export default function NavBar() {
     <nav className="sticky top-0 z-10 my-4 flex w-full flex-col bg-primaryDark">
       <div className="invisible m-0 flex w-0 flex-row lg:visible lg:my-4 lg:w-full">
         <h1 className="font-poppins text-2xl font-bold">{nameLogo}</h1>
-        <ul className="flex h-full w-full flex-row justify-end gap-16 text-sm font-semibold">
+        <ul className="flex size-full flex-row justify-end gap-16 text-sm font-semibold">
           <li className="my-auto">
             <Link
               className="rounded-md p-3 text-white hover:bg-primaryLight"
@@ -51,7 +51,7 @@ export default function NavBar() {
           </li>
         </ul>
       </div>
-      <div className="visible my-3 flex w-full flex-col lg:invisible lg:m-0 lg:h-0 lg:w-0">
+      <div className="visible my-3 flex w-full flex-col lg:invisible lg:m-0 lg:size-0">
         <div className="flex flex-row">
           <h1 className="font-poppins text-xl font-bold">{nameLogo}</h1>
           <div className="flex w-full justify-end">
@@ -63,15 +63,15 @@ export default function NavBar() {
         </div>
         <ul
           className={clsx(
-            'z-10 flex flex-col justify-center gap-2 text-sm font-semibold',
-            menuOpen ? 'visible h-full w-full' : 'invisible h-0 w-0',
+            "z-10 flex flex-col justify-center gap-2 text-sm font-semibold",
+            menuOpen ? "visible size-full" : "invisible size-0"
           )}
         >
           <li className="my-auto flex justify-center">
             <Link
               className={clsx(
-                'rounded-md p-3 text-white hover:bg-primaryLight',
-                pathName === '/' ? 'bg-primaryLight' : 'bg-none',
+                "rounded-md p-3 text-white hover:bg-primaryLight",
+                pathName === "/" ? "bg-primaryLight" : "bg-none"
               )}
               href="/"
               onClick={() => setMenuOpen(!menuOpen)}
@@ -82,8 +82,8 @@ export default function NavBar() {
           <li className="my-auto flex justify-center">
             <Link
               className={clsx(
-                'rounded-md p-3 text-white hover:bg-primaryLight',
-                pathName === '/#about' ? 'bg-primaryLight' : 'bg-none',
+                "rounded-md p-3 text-white hover:bg-primaryLight",
+                pathName === "/#about" ? "bg-primaryLight" : "bg-none"
               )}
               href="#about"
               onClick={() => setMenuOpen(!menuOpen)}
@@ -94,8 +94,8 @@ export default function NavBar() {
           <li className="my-auto flex justify-center">
             <Link
               className={clsx(
-                'rounded-md p-3 text-white hover:bg-primaryLight',
-                pathName === '/#work' ? 'bg-primaryLight' : 'bg-none',
+                "rounded-md p-3 text-white hover:bg-primaryLight",
+                pathName === "/#work" ? "bg-primaryLight" : "bg-none"
               )}
               href="#work"
               onClick={() => setMenuOpen(!menuOpen)}
@@ -106,8 +106,8 @@ export default function NavBar() {
           <li className="my-auto flex justify-center">
             <Link
               className={clsx(
-                'rounded-md p-3 text-white hover:bg-primaryLight',
-                pathName === '/#projects' ? 'bg-primaryLight' : 'bg-none',
+                "rounded-md p-3 text-white hover:bg-primaryLight",
+                pathName === "/#projects" ? "bg-primaryLight" : "bg-none"
               )}
               href="#projects"
               onClick={() => setMenuOpen(!menuOpen)}
