@@ -1,6 +1,6 @@
-import type { ReactNode } from 'react';
+import type { ReactNode } from "react";
 
-import NavBar from '@/components/NavBar';
+import NewNavBar from "@/components/NewNavBar";
 
 type IMainProps = {
   meta?: ReactNode;
@@ -11,9 +11,9 @@ const Main = (props: IMainProps) => (
   <div className="w-full px-8 text-white antialiased lg:p-0">
     {props.meta}
 
-    <div className="mx-auto max-w-screen-xl">
-      <NavBar />
-      <main className="py-5 text-xl">{props.children}</main>
+    <div className="mx-auto ">
+      <NewNavBar />
+      <main className=" text-xl">{props.children}</main>
     </div>
   </div>
 );

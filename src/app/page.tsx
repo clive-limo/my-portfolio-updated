@@ -1,27 +1,62 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
-import Image from 'next/image';
-import { AiOutlineGithub, AiOutlineLinkedin } from 'react-icons/ai';
-import { FiArrowRight } from 'react-icons/fi';
-import { IoMailOutline } from 'react-icons/io5';
+import Image from "next/image";
 
-import About from '@/components/About';
-import Footer from '@/components/Footer';
-import PhoneHome from '@/components/PhoneHome';
-import Projects from '@/components/Projects';
-import Work from '@/components/Work';
-import { Main } from '@/templates/Main';
+import About from "@/components/About";
+import { ContatctMe } from "@/components/ContatctMe";
+import Footer from "@/components/Footer";
+import PhoneHome from "@/components/PhoneHome";
+import Projects from "@/components/Projects";
+import { Skills } from "@/components/Skills";
+import WorkRed from "@/components/WorkRed";
+import { Main } from "@/templates/Main";
 
 export default function Home() {
   return (
     <Main>
-      <section className="invisible z-0 h-0 w-0 md:visible md:h-full md:w-full lg:visible lg:h-full lg:w-full">
-        <h1 className="bg-gradient-to-tr from-accentGreen to-accentBlue bg-clip-text text-6xl font-extrabold text-transparent">
-          Hi, I&apos;m Clive, I create digital solutions learning and growing
-          with every line of code.
-        </h1>
-        <div className="mt-14 flex flex-row">
-          <div className="my-auto mr-8 flex h-[155px] w-[155px] justify-center rounded-full bg-gradient-to-tr from-accentGreen to-accentBlue bg-clip-padding">
-            <div className="relative z-0 m-auto h-[145px] w-[145px] overflow-hidden rounded-full bg-primaryDark/80">
+      {/* web home page */}
+      <section className="invisible z-0 size-0 flex-row md:visible md:size-full lg:visible lg:size-full lg:bg-white">
+        <section className="mx-auto max-w-screen-xl">
+          <div className="relative py-5">
+            <Image
+              src="/assets/images/strokes.svg"
+              alt="clive animation"
+              height={36}
+              width={36}
+              className="absolute -top-1 right-[540px] rotate-12"
+            />
+            <h2 className="text-md mx-auto w-fit rounded-full border-2 border-black px-4 py-2 font-lufga text-black">
+              Hello!
+            </h2>
+            <h1 className="mx-auto text-center font-lufga text-[80px] font-semibold text-black">
+              I&apos;m <span className="text-accentOrange">Clive</span>, <br />{" "}
+              Full Stack Developer
+            </h1>
+            <Image
+              src="/assets/images/strokes.svg"
+              alt="clive animation"
+              height={56}
+              width={56}
+              className="absolute bottom-0 left-[180px] -rotate-[150deg]"
+            />
+          </div>
+          <div className="flex flex-row items-center justify-center gap-5">
+            {/* short description here */}
+            <div className="flex flex-1 flex-col gap-2">
+              <Image
+                src="/assets/images/quotes.svg"
+                alt="clive animation"
+                height={36}
+                width={36}
+              />
+              <p className="text-md font-lufga font-light text-textLight">
+                Welcome to my portfolio! Here you&apos;ll find a collection of
+                projects that reflect my journey as a full-stack developer.
+                I&apos;m dedicated to building well-structured, efficient, and
+                visually appealing web applications.
+              </p>
+            </div>
+            {/* profile image */}
+            <div className="relative z-0 m-auto size-[445px] shrink-0 rounded-full  bg-primaryDark/80">
               <Image
                 src="/assets/images/clive-portrait.png"
                 alt="clive animation"
@@ -31,93 +66,30 @@ export default function Home() {
                 width={0}
               />
             </div>
-          </div>
-          <div className="mr-20 max-w-[500px]">
-            <h2 className="mt-10 text-3xl font-bold text-white">Profile</h2>
-            <p className="mt-1 text-lg text-zinc-500">
-              I am a versatile{' '}
-              <span className="font-bold text-accentBlue">
-                Full-Stack Software Developer
-              </span>{' '}
-              and{' '}
-              <span className="font-bold text-accentGreen">
-                UI/UX Designer{' '}
-              </span>
-              with a passion for creating seamless digital experiences. With
-              expertise in the{' '}
-              <span className="font-bold text-accentBlue">MERN</span> tech
-              stack.
-            </p>
-          </div>
-          <div className="flex flex-col">
-            <h2 className="mb-2 mt-10 text-3xl font-bold text-white">
-              Let&apos;s Connect
-            </h2>
-            <div className="flex flex-row gap-2">
-              <a href="mailto:limoclive01@gmail.com">
-                <IoMailOutline className="text-4xl hover:scale-110  hover:text-accentBlue hover:ease-in-out" />
-              </a>
-              <a
-                target="_blank"
-                rel="noopener"
-                href="https://github.com/clive-limo"
-              >
-                <AiOutlineGithub className="text-4xl hover:scale-110  hover:text-accentBlue hover:ease-in-out" />
-              </a>
-              <a
-                target="_blank"
-                rel="noopener"
-                href="https://www.linkedin.com/in/clive-limo-66aa881a3/"
-              >
-                <AiOutlineLinkedin className="text-4xl hover:scale-110  hover:text-accentBlue hover:ease-in-out" />
-              </a>
+            {/* exprerience */}
+            <div className="mb-2 flex flex-1 flex-col items-center justify-center">
+              <Image
+                src="/assets/images/stars.svg"
+                alt="clive animation"
+                height={24}
+                width={100}
+              />
+              <p className="font-lufga text-4xl font-bold text-textLight">
+                4+ Years
+              </p>
+              <p className="text-textLight">Experience</p>
             </div>
           </div>
-        </div>
-        <div className="mt-20 flex h-64 flex-row">
-          <div className="my-auto">
-            <h2 className="mb-2 text-3xl font-bold text-white">
-              What I Am{' '}
-              <span className="bg-gradient-to-tr from-accentGreen to-accentBlue bg-clip-text text-transparent">
-                Great
-              </span>{' '}
-              At
-            </h2>
-            <p className="mt-1 max-w-[600px] text-lg text-zinc-500 md:mr-5 lg:pr-7">
-              I excel at collaboration, problem-solving and creative thinking,
-              leveraging my skills to craft efficient and user-centric digital
-              solutions that drive engagement and satisfaction.
-            </p>
-          </div>
-          <div className="mr-7 h-full w-64 overflow-hidden rounded-2xl bg-primaryLight hover:shadow-xl hover:shadow-accentBlue/30">
-            <h3 className="mt-10 w-full text-center font-bold text-white">
-              Web Development
-            </h3>
-            <p className=" py-3 text-center text-sm font-normal text-zinc-500">
-              I specialize in developing dynamic web applications using the
-              latest technologies, ensuring seamless functionality and
-              exceptional user experiences.
-            </p>
-          </div>
-          <div className=" mr-7 h-full w-64 rounded-2xl bg-primaryLight p-2 hover:shadow-xl hover:shadow-accentBlue/30">
-            <h3 className="mt-8 w-full text-center font-bold text-white">
-              UI/UX Design
-            </h3>
-            <p className=" py-3 text-center text-sm font-normal text-zinc-500">
-              My expertise lies in crafting intuitive and visually captivating
-              user interfaces, enhancing user journeys through thoughtful design
-              and usability principles.
-            </p>
-          </div>
-          <div className="mx-5 my-auto">
-            <FiArrowRight className="text-4xl font-bold" />
-          </div>
-        </div>
+        </section>
       </section>
+      {/* mobile home page */}
       <PhoneHome />
+      {/* <Services /> */}
       <About />
-      <Work />
+      <WorkRed />
+      <Skills />
       <Projects />
+      <ContatctMe />
       <Footer />
     </Main>
   );
