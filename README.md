@@ -1,4 +1,4 @@
-# Portfolio project for Ixartz
+# Portfolio project for Clive
 
 This is my personal portfolio project, written using Next.js, Tailwind CSS, and TypeScript. It is a simple website that showcases my skills and experience.
 
