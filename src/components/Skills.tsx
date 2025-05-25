@@ -10,7 +10,7 @@ export const Skills = () => {
       className="relative my-16 flex w-full flex-col overflow-hidden rounded-[100px] bg-secondaryLight"
       id="skills"
     >
-      <div className="mx-auto flex w-full max-w-screen-xl flex-row">
+      <div className="mx-auto flex w-full max-w-screen-xl flex-col px-2 lg:flex-row">
         {/* skill image */}
         <div className="relative flex flex-1 flex-col items-center justify-center">
           <Image
@@ -18,27 +18,29 @@ export const Skills = () => {
             alt="about profile image"
             height={300}
             width={300}
-            className="z-30"
+            className="z-30 rounded-b-full border border-accentOrange/30 md:border-0 lg:rounded-b-none "
           />
-          <div className="absolute bottom-[162px] z-0 h-[200px] w-[300px] rounded-t-[80px] bg-accentOrange/80" />
+          <div className="absolute bottom-[169px] z-0 h-[200px] w-[300px] rounded-t-[80px] bg-accentOrange/80" />
         </div>
         {/* skills content */}
         <div className="flex flex-1 flex-col justify-between">
-          <h1 className="py-16 text-left font-lufga text-[56px] font-semibold text-textLight">
+          <h1 className="py-8 text-left font-lufga text-4xl font-semibold text-textLight md:py-16 md:text-[48px]">
             What I&apos;m <span className="text-accentOrange">Great</span> at
           </h1>
-          <p className="font-lufga text-lg font-light text-textLight/80">
-            I have a deep understanding of the full web development stack, from
-            backend to frontend. I am proficient in Node.js, Express, Next.js,
-            React, Angular, Vue.js, Ruby on Rails, Django, Flask, and Laravel. I
-            also have experience with native mobile app development, using React
-            Native and Flutter. I am skilled in using a variety of databases
-            such as MySQL, MongoDB, PostgreSQL, and Redis. I am also familiar
-            with various OS and system administration.
+          <p className="font-lufga text-sm  font-light text-textLight/80 md:text-lg">
+            I have expertise across the complete web development lifecycle.
+            Proficient in Node.js and Express for backend development, React and
+            Next.js for modern frontend applications, and Vue.js for
+            component-based UIs. Experienced in mobile development using React
+            Native and Flutter for cross-platform applications. Strong database
+            experience including MySQL, PostgreSQL, MongoDB, and Redis for
+            various data storage and caching needs. Skilled in system
+            administration and AWS cloud architecture for scalable
+            infrastructure design and deployment.
           </p>
-          <div className="my-16 flex flex-row justify-between gap-8">
+          <div className="my-16 flex flex-row flex-wrap justify-between gap-8">
             <div className="flex flex-col items-center">
-              <h2 className="text-left font-lufga text-[32px] font-semibold text-textLight">
+              <h2 className="text-left font-lufga text-2xl font-semibold text-textLight md:text-[32px]">
                 Frontend
               </h2>
               <div className="flex flex-row gap-4">
@@ -53,7 +55,7 @@ export const Skills = () => {
               </div>
             </div>
             <div className="flex flex-col items-center">
-              <h2 className="text-left font-lufga text-[32px] font-semibold text-textLight">
+              <h2 className="text-left font-lufga text-2xl font-semibold text-textLight md:text-[32px]">
                 Backend
               </h2>
               <div className="flex flex-row gap-4">
@@ -74,7 +76,7 @@ export const Skills = () => {
               </div>
             </div>
             <div className="flex flex-col items-center">
-              <h2 className="text-left font-lufga text-[32px] font-semibold text-textLight">
+              <h2 className="text-left font-lufga text-2xl font-semibold text-textLight md:text-[32px]">
                 Native
               </h2>
               <div className="flex flex-row gap-4">

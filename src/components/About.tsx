@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function About() {
   return (
     <section
-      className="relative w-full overflow-hidden rounded-[100px] bg-primaryDark pt-20"
+      className="relative mt-8 w-full overflow-hidden rounded-[100px] bg-primaryDark pt-20 md:mt-0"
       id="about"
     >
       {/* overlay image */}
@@ -13,17 +13,17 @@ export default function About() {
         layout="responsive"
         width={400}
         height={400}
-        className="absolute z-10"
+        className="absolute z-10 hidden md:block"
       />
       {/* about content */}
       <div className="relative z-20 mx-auto w-full max-w-screen-xl flex-row">
         <div className="flex flex-row justify-between ">
-          <h1 className="text-left font-lufga text-[48px] font-semibold text-white">
+          <h1 className="px-2 text-left font-lufga text-4xl  font-semibold text-white md:text-[48px]">
             About <span className="text-accentOrange">Me</span>
           </h1>
           {/* <p>Hello there</p> */}
         </div>
-        <div className="flex flex-1 flex-col gap-2 pt-10">
+        <div className="flex flex-1 flex-col gap-2 px-2 pt-5 md:px-0 md:pt-10">
           <Image
             src="/assets/images/quotes.svg"
             alt="clive animation"
@@ -31,7 +31,7 @@ export default function About() {
             width={36}
             className="invert"
           />
-          <p className="text-md mt-3 w-full font-lufga font-thin">
+          <p className="mt-3 w-full font-lufga text-sm font-thin md:text-lg">
             My journey in the world of software development began with a strong
             curiosity and a desire to know how websites and different software
             work. Over the years, I have honed my skills in both frontend and

@@ -8,7 +8,7 @@ type IMainProps = {
 };
 
 const Main = (props: IMainProps) => (
-  <div className="w-full px-8 text-white antialiased lg:p-0">
+  <div className="w-full px-2 text-white antialiased lg:p-0">
     {props.meta}
 
     <div className="mx-auto ">
