@@ -1,5 +1,7 @@
 "use client";
 
+import { recentPositions } from "@/utils/data";
+
 interface IProps {
   company: string;
   title: string;
@@ -9,24 +11,6 @@ interface IProps {
   location: string;
   index: number;
 }
-
-// export function JobCards({ title, start, end }: IProps) {
-//   const { isOpen, setIsOpen } = UseJobContext();
-//   return (
-//     // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions
-//     <div
-//       className={clsx(
-//         'w-full p-3 hover:bg-accentGreen/5',
-//         isOpen === title ? 'bg-accentGreen/20' : 'bg-none',
-//       )}
-//     >
-//       <h2 className=" text-xl font-bold">{title}</h2>
-//       <p className="text-sm font-normal text-zinc-500">
-//         {start} to {end}
-//       </p>
-//     </div>
-//   );
-// }
 
 export function JobCardsRed({
   company,
@@ -110,7 +94,7 @@ export function JobCardsRed({
         <h1 className="text-left font-lufga text-xl font-semibold text-textLight sm:text-2xl lg:text-[28px] xl:text-[32px]">
           {title}
         </h1>
-        <p className="lg:text-md pb-2 font-lufga text-sm font-normal leading-relaxed text-textLight/50 sm:text-base lg:pb-3">
+        <p className="pb-2 font-lufga text-sm font-normal leading-relaxed text-textLight/50 sm:text-base lg:pb-3 lg:text-base">
           {tasks}
         </p>
       </div>
@@ -121,47 +105,6 @@ export function JobCardsRed({
 export default function WorkRed() {
   // const { isOpen } = UseJobContext();
 
-  const recentPositions = [
-    {
-      company: "Kitrel LLC",
-      title: "Full Stack Engineer",
-      start: "September, 2023",
-      end: "Present",
-      tasks:
-        "Developing and maintaining robust web and mobile applications utilizing Vue.js, React Native, and Node.js within an AWS infrastructure. Building RESTful APIs using Express.js to deliver scalable and efficient solutions.",
-      location: "Houston, Texas",
-      employmentType: "Full-time",
-    },
-    {
-      company: "Chemtron Enterprises",
-      title: "Full Stack Developer",
-      start: "January, 2022",
-      end: "October, 2023",
-      tasks:
-        "Developed a user-friendly finance management software with advanced features, resulting in a 20% increase in sales tracking accuracy and efficiency.",
-      location: "Mombasa, Kenya",
-      employmentType: "Part-time",
-    },
-    {
-      company: "Prolox Solutions",
-      title: "Jr Software Engineer",
-      start: "December, 2020",
-      end: "November, 2021",
-      tasks:
-        "Implemented front-end enhancements and optimizations to improve website performance, resulting in a 20% decrease in page load time and a 15% increase in customer engagement.",
-      location: "Nairobi, Kenya",
-    },
-    {
-      company: "Mandera Service Delivery",
-      title: "Frontend Web Developer",
-      start: "July, 2020",
-      end: "April, 2021",
-      tasks:
-        "Collaborated with a cross-functional team to build web portals that streamlined service delivery processes for government clients, resulting in improved response times and user experience.",
-      location: "Nairobi, Kenya",
-      employmentType: "Part-time",
-    },
-  ];
   return (
     <section
       className="my-8 flex w-full flex-col px-4 sm:px-6 md:my-16 lg:px-8"
