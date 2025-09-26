@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 
 import NewNavBar from "@/components/NewNavBar";
+import BackToTop from "@/components/ui/BackToTop";
 
 type IMainProps = {
   meta?: ReactNode;
@@ -12,6 +13,7 @@ const Main = (props: IMainProps) => (
     {props.meta}
 
     <div className="mx-auto lg:mt-36">
+      <BackToTop />
       <NewNavBar />
       <main className=" text-xl">{props.children}</main>
     </div>
