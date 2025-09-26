@@ -101,7 +101,7 @@ export default function NewNavBar() {
   return (
     <div className="relative flex flex-col bg-white">
       {/* Desktop Navigation */}
-      <div className="mx-auto my-8 hidden w-full max-w-screen-2xl rounded-[100px] bg-black p-2 lg:fixed lg:left-1/2 lg:top-0 lg:z-20 lg:mx-0 lg:my-2 lg:block lg:-translate-x-1/2">
+      <div className="mx-auto my-8 hidden w-full max-w-screen-2xl rounded-[100px] bg-black p-2 lg:fixed lg:left-1/2 lg:top-0 lg:z-[100px] lg:mx-0 lg:my-2 lg:block lg:-translate-x-1/2">
         <ul className="flex w-full flex-row gap-2 text-sm font-semibold">
           {navItems.slice(0, 3).map((item) => (
             <li key={item.id} className="my-auto">
