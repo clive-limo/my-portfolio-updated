@@ -10,12 +10,12 @@ export const ContatctMe = () => {
   return (
     <section className="my-16 flex w-full flex-col" id="contact">
       <div className="mx-auto flex w-full max-w-screen-xl flex-col">
-        <h1 className="py-8 text-center font-lufga text-4xl font-semibold text-textLight md:py-16 md:text-[56px]">
+        <h1 className="py-8 text-center font-lufga text-4xl font-semibold text-textLight dark:text-offwhite md:py-16 md:text-[56px]">
           Have an Awesome Project <br />
           Idea? <span className="text-accentOrange">Let&apos;s Discuss</span>
         </h1>
 
-        <div className="mx-auto flex w-full max-w-screen-lg flex-row rounded-full border border-black/10 p-2">
+        <div className="mx-auto flex w-full max-w-screen-lg flex-row rounded-full border border-black/10 p-2 dark:border-offwhite/50">
           {/* email icon */}
           <div className="flex items-center rounded-full bg-accentOrange/20 p-3">
             <IoMailOutline
@@ -42,7 +42,7 @@ export const ContatctMe = () => {
 
         {/* Quick email templates */}
         <div className="mt-6 flex flex-col items-center">
-          <p className="mb-3 text-center font-lufga text-sm text-black/60">
+          <p className="mb-3 text-center font-lufga text-sm text-black/60 dark:text-offwhite/60">
             Or send a quick message:
           </p>
           <div className="flex flex-wrap justify-center gap-2">
@@ -69,21 +69,21 @@ export const ContatctMe = () => {
 
         <div className="my-3 flex flex-row items-center justify-center gap-5">
           <a href="mailto:limoclive01@gmail.com">
-            <IoMailOutline className="text-4xl text-black/60 transition-all duration-200 hover:scale-110 hover:rounded-full hover:bg-accentOrange/30 hover:p-1 hover:text-accentOrange hover:ease-in-out" />
+            <IoMailOutline className="text-4xl text-black/60 transition-all duration-200 hover:scale-110 hover:rounded-full hover:bg-accentOrange/30 hover:p-1 hover:text-accentOrange hover:ease-in-out   dark:text-offwhite/60 dark:hover:text-accentOrange" />
           </a>
           <a
             target="_blank"
             rel="noopener"
             href="https://github.com/clive-limo"
           >
-            <AiOutlineGithub className="text-4xl text-black/60 transition-all duration-200 hover:scale-110 hover:rounded-full hover:bg-accentOrange/30 hover:p-1 hover:text-accentOrange hover:ease-in-out" />
+            <AiOutlineGithub className="text-4xl text-black/60 transition-all duration-200 hover:scale-110 hover:rounded-full hover:bg-accentOrange/30 hover:p-1 hover:text-accentOrange hover:ease-in-out  dark:text-offwhite/60 dark:hover:text-accentOrange" />
           </a>
           <a
             target="_blank"
             rel="noopener"
             href="https://www.linkedin.com/in/clive-limo-66aa881a3/"
           >
-            <AiOutlineLinkedin className="text-4xl text-black/60 transition-all duration-200 hover:scale-110 hover:rounded-full hover:bg-accentOrange/30 hover:p-1 hover:text-accentOrange hover:ease-in-out" />
+            <AiOutlineLinkedin className="text-4xl text-black/60 transition-all duration-200 hover:scale-110 hover:rounded-full hover:bg-accentOrange/30  hover:p-1 hover:text-accentOrange hover:ease-in-out dark:text-offwhite/60 dark:hover:text-accentOrange" />
           </a>
         </div>
       </div>

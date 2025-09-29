@@ -26,10 +26,10 @@ export function JobCardsRed({
     <div className="flex w-full flex-col gap-4 lg:flex-row lg:gap-8">
       {/* Company Info */}
       <div className="order-1 flex flex-1 flex-col gap-2 lg:order-1 lg:gap-3">
-        <h1 className="text-left font-lufga text-xl font-semibold text-textLight sm:text-2xl lg:text-[28px] xl:text-[32px]">
+        <h1 className="text-left font-lufga text-xl font-semibold text-textLight dark:text-offwhite sm:text-2xl lg:text-[28px] xl:text-[32px]">
           {`${company}-${location}`}
         </h1>
-        <p className="font-lufga text-sm text-textLight/50 sm:text-base lg:text-lg">
+        <p className="font-lufga text-sm text-textLight/50 dark:text-offwhite/80 sm:text-base lg:text-lg">
           {start} - {end}
         </p>
       </div>
@@ -72,18 +72,22 @@ export function JobCardsRed({
             className={`size-10 shrink-0 rounded-full border-2 p-1 xl:size-12 ${
               index % 2 === 0
                 ? "border-dashed border-accentOrange"
-                : "border-dashed border-black"
+                : "border-dashed border-black dark:border-offwhite/50"
             }`}
           >
             <div
               className={`size-full rounded-full ${
-                index % 2 === 0 ? "bg-accentOrange" : "bg-black"
+                index % 2 === 0
+                  ? "bg-accentOrange"
+                  : "bg-black dark:bg-offwhite/50"
               }`}
             />
           </div>
           <div
             className={`h-full w-0 border-2 border-dashed ${
-              index % 2 === 0 ? "border-accentOrange" : "border-black"
+              index % 2 === 0
+                ? "border-accentOrange"
+                : "border-black dark:border-offwhite/50"
             } mx-auto`}
           />
         </div>
@@ -91,10 +95,10 @@ export function JobCardsRed({
 
       {/* Job Details */}
       <div className="order-2 flex flex-1 flex-col gap-2 lg:order-3">
-        <h1 className="text-left font-lufga text-xl font-semibold text-textLight sm:text-2xl lg:text-[28px] xl:text-[32px]">
+        <h1 className="text-left font-lufga text-xl font-semibold text-textLight dark:text-offwhite sm:text-2xl lg:text-[28px] xl:text-[32px]">
           {title}
         </h1>
-        <p className="pb-2 font-lufga text-sm font-normal leading-relaxed text-textLight/50 sm:text-base lg:pb-3 lg:text-base">
+        <p className="pb-2 font-lufga text-sm font-normal leading-relaxed text-textLight/50 dark:text-offwhite/80 sm:text-base lg:pb-3 lg:text-base">
           {tasks}
         </p>
       </div>
@@ -111,7 +115,7 @@ export default function WorkRed() {
       id="work"
     >
       <div className="mx-auto flex w-full max-w-screen-xl flex-col">
-        <h1 className="py-8 text-left font-lufga text-4xl font-bold leading-tight text-textLight sm:py-12 sm:text-4xl md:text-5xl lg:py-16 lg:text-[56px]">
+        <h1 className="py-8 text-left font-lufga text-4xl font-bold leading-tight text-textLight dark:text-offwhite  sm:py-12 sm:text-4xl md:text-5xl lg:py-16 lg:text-[56px]">
           My <span className="text-accentOrange">Work Experience</span>
         </h1>
 

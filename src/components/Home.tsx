@@ -3,7 +3,10 @@ import React from "react";
 
 export const HomePage = () => {
   return (
-    <section id="home" className="z-0 w-full bg-white px-4 sm:px-6 lg:px-8">
+    <section
+      id="home"
+      className="z-0 w-full bg-white px-4 transition-colors duration-500 ease-in-out dark:bg-black sm:px-6 lg:px-8 lg:pt-36"
+    >
       <section className="mx-auto max-w-screen-xl">
         <div className="relative py-8 sm:py-12 lg:py-5">
           {/* Decorative strokes - hidden on mobile */}
@@ -16,15 +19,15 @@ export const HomePage = () => {
           />
 
           {/* Hello badge */}
-          <h2 className="mx-auto mb-4 w-fit rounded-full border-2 border-black px-3 py-1.5 font-lufga text-sm text-black sm:mb-6 sm:px-4 sm:py-2 sm:text-base">
+          <h2 className="mx-auto mb-4 w-fit rounded-full border-2 border-black px-3 py-1.5 font-lufga text-sm text-black dark:border-offwhite/50 dark:text-offwhite sm:mb-6 sm:px-4 sm:py-2 sm:text-base">
             Hello!
           </h2>
 
           {/* Main heading */}
-          <h1 className="mx-auto text-center font-lufga text-4xl font-bold leading-tight text-black sm:text-4xl md:text-5xl lg:text-6xl xl:text-[80px]">
+          <h1 className="mx-auto text-center font-lufga text-4xl font-bold leading-tight text-black dark:text-offwhite sm:text-4xl md:text-5xl lg:text-6xl xl:text-[80px]">
             I&apos;m <span className="text-accentOrange">Clive</span>,
             <br className="hidden sm:inline" />{" "}
-            <span className="block sm:inline">Full Stack Developer</span>
+            <span className="block  sm:inline">Full Stack Developer</span>
           </h1>
 
           {/* Bottom decorative stroke - hidden on mobile */}
@@ -48,7 +51,7 @@ export const HomePage = () => {
               width={28}
               className="sm:size-9"
             />
-            <p className="font-lufga text-sm font-light leading-relaxed text-textLight/80 sm:text-base lg:text-lg">
+            <p className="font-lufga text-sm font-light leading-relaxed text-textLight/80 dark:text-offwhite/80 sm:text-base lg:text-lg">
               Welcome to my portfolio! Here you&apos;ll find a collection of
               projects that reflect my journey as a full-stack developer.
               I&apos;m dedicated to building well-structured, efficient, and
@@ -57,7 +60,7 @@ export const HomePage = () => {
           </div>
 
           {/* Profile image */}
-          <div className="relative z-0 order-1 size-64 shrink-0 rounded-full bg-primaryDark/80 sm:size-80 md:size-96 lg:order-2 lg:size-[380px] xl:size-[445px]">
+          <div className="relative z-0 order-1 size-64 shrink-0 rounded-full border border-white/0 bg-primaryDark/80 dark:border-offwhite/50 sm:size-80 md:size-96 lg:order-2 lg:size-[380px] xl:size-[445px]">
             <Image
               src="/assets/images/clive-portrait.png"
               alt="clive animation"
@@ -76,10 +79,10 @@ export const HomePage = () => {
               width={80}
               className="mb-2 sm:h-6 sm:w-24 lg:h-6 lg:w-[100px]"
             />
-            <p className="font-lufga text-2xl font-bold text-textLight sm:text-3xl lg:text-4xl">
+            <p className="font-lufga text-2xl font-bold text-textLight dark:text-offwhite sm:text-3xl lg:text-4xl">
               4+ Years
             </p>
-            <p className="pb-5 font-lufga text-sm text-textLight sm:text-base">
+            <p className="pb-5 font-lufga text-sm text-textLight dark:text-offwhite/80 sm:text-base">
               Experience
             </p>
           </div>

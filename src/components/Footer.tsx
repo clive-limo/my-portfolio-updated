@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer
       id="about"
-      className="relative w-full overflow-hidden rounded-t-[100px] bg-primaryDark pt-20"
+      className="relative w-full overflow-hidden rounded-t-[100px] border border-white/0 bg-primaryDark pt-20 dark:border-offwhite/50"
     >
       {/* overlay image – hide on sm */}
       <div className="absolute inset-0 -top-10 z-10 hidden md:block">

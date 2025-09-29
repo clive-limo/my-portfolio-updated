@@ -12,10 +12,10 @@ const Main = (props: IMainProps) => (
   <div className="relative w-full px-2 text-white antialiased lg:p-0">
     {props.meta}
 
-    <div className="mx-auto lg:mt-36">
+    <div className="mx-auto">
       <BackToTop />
       <NewNavBar />
-      <main className=" text-xl">{props.children}</main>
+      <main className="text-xl">{props.children}</main>
     </div>
   </div>
 );

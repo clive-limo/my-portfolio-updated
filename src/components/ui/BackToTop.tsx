@@ -17,7 +17,7 @@ export default function BackToTop() {
     <div className="absolute h-screen w-full">
       <button
         type="button"
-        className="fixed bottom-4 right-3 z-50 rounded-full bg-black/80 p-5 text-white backdrop-blur-lg"
+        className="fixed bottom-4 right-3 z-50 rounded-full border border-white/0  bg-black/80 p-5 text-white backdrop-blur-lg dark:border-offwhite/50"
         onClick={handleClick}
       >
         <IoArrowUpSharp color="white" />

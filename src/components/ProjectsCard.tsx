@@ -17,7 +17,7 @@ export default function ProjectsCard({
   technologies,
 }: IProjectCardProps) {
   return (
-    <div className="relative flex flex-col rounded-[50px] bg-primaryLight">
+    <div className="relative flex flex-col rounded-[50px] border border-white/0 bg-primaryDark dark:border-offwhite/50">
       {/* description */}
       <div className="flex flex-col p-6 md:px-10 md:pt-10">
         <h2 className="font-lufga text-2xl font-bold md:text-3xl">{title}</h2>

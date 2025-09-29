@@ -1,12 +1,18 @@
 "use client";
 
+import Image from "next/image";
 import React, { useEffect, useMemo, useState } from "react";
+import { IoMoon, IoSunny } from "react-icons/io5";
+
+import { useDarkMode } from "@/hooks/useDarkMode";
 
 export default function NewNavBar() {
   const nameLogo = "<clive_limo/>";
 
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
+
+  const darkMode = useDarkMode();
 
   // Navigation items
   const navItems = useMemo(
@@ -21,7 +27,6 @@ export default function NewNavBar() {
     []
   );
 
-  // Smooth scroll function
   const handleSmoothScroll = (e: React.MouseEvent, targetId: string) => {
     e.preventDefault();
 
@@ -101,7 +106,7 @@ export default function NewNavBar() {
   return (
     <div className="relative flex flex-col bg-white">
       {/* Desktop Navigation */}
-      <div className="mx-auto my-8 hidden w-full max-w-screen-2xl rounded-[100px] bg-black p-2 lg:fixed lg:left-1/2 lg:top-0 lg:z-[100px] lg:mx-0 lg:my-2 lg:block lg:-translate-x-1/2">
+      <div className="mx-auto my-8 hidden w-full max-w-screen-2xl border-collapse rounded-[100px] border bg-black p-2 dark:border-offwhite/50 lg:fixed lg:left-1/2 lg:top-0 lg:z-50 lg:mx-0 lg:my-2 lg:block lg:-translate-x-1/2">
         <ul className="flex w-full flex-row gap-2 text-sm font-semibold">
           {navItems.slice(0, 3).map((item) => (
             <li key={item.id} className="my-auto">
@@ -119,9 +124,19 @@ export default function NewNavBar() {
             </li>
           ))}
 
-          <h1 className="mx-auto font-poppins text-xl font-bold text-white xl:text-2xl">
-            {nameLogo}
-          </h1>
+          <div className="mx-auto flex flex-row items-center px-4">
+            {/* <h1 className=" font-poppins text-xl font-bold text-white xl:text-2xl">
+              {nameLogo}
+            </h1> */}
+
+            <Image
+              src="/assets/images/logo.png"
+              height={50}
+              width={50}
+              className="object-contain"
+              alt="clive limo logo"
+            />
+          </div>
 
           {navItems.slice(3).map((item) => (
             <li key={item.id} className="my-auto">
@@ -139,6 +154,14 @@ export default function NewNavBar() {
             </li>
           ))}
         </ul>
+        <button
+          type="button"
+          className="absolute -bottom-5 right-1 rounded-full border border-offwhite/50 bg-black  p-3 text-white"
+          onClick={darkMode.toggleDarkMode}
+          aria-label="Toggle Dark Mode"
+        >
+          {darkMode.isDark ? <IoSunny size={20} /> : <IoMoon size={20} />}
+        </button>
       </div>
 
       {/* Mobile/Tablet Navigation */}

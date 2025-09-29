@@ -5,7 +5,7 @@ export default function Projects() {
     <section className="w-full" id="projects">
       <div className="mx-auto flex w-full max-w-screen-xl flex-col">
         <div className="flex flex-row justify-between">
-          <h1 className="py-8 text-left font-lufga text-4xl font-semibold text-textLight md:py-16 md:text-[56px]">
+          <h1 className="py-8 text-left font-lufga text-4xl font-semibold text-textLight dark:text-offwhite md:py-16 md:text-[56px]">
             Let&apos;s have a look at <br /> my{" "}
             <span className="text-accentOrange">Portfolio</span>
           </h1>

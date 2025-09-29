@@ -91,7 +91,7 @@ export default function RootLayout({
   return (
     <JobContextProvider>
       <html lang="en" className={`${lufgaFont.variable}`}>
-        <body className="bg-white">
+        <body className="bg-white transition-colors duration-500 ease-in-out dark:bg-black">
           {children}
           <Analytics />
         </body>

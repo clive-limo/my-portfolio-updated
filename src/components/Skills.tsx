@@ -7,7 +7,7 @@ import { SiMongodb } from "react-icons/si";
 export const Skills = () => {
   return (
     <section
-      className="relative my-16 flex w-full flex-col overflow-hidden rounded-[100px] bg-secondaryLight"
+      className="relative my-16 flex w-full flex-col overflow-hidden rounded-[100px] border border-white/0 bg-secondaryLight dark:border-offwhite/50 dark:bg-primaryDark"
       id="skills"
     >
       <div className="mx-auto flex w-full max-w-screen-xl flex-col px-2 lg:flex-row">
@@ -24,10 +24,10 @@ export const Skills = () => {
         </div>
         {/* skills content */}
         <div className="flex flex-1 flex-col justify-between">
-          <h1 className="py-8 text-left font-lufga text-4xl font-semibold text-textLight md:py-16 md:text-[48px]">
+          <h1 className="py-8 text-left font-lufga text-4xl font-semibold text-textLight dark:text-offwhite md:py-16 md:text-[48px]">
             What I&apos;m <span className="text-accentOrange">Great</span> at
           </h1>
-          <p className="font-lufga text-sm  font-light text-textLight/80 md:text-lg">
+          <p className="font-lufga text-sm  font-light text-textLight/80 dark:text-offwhite/60 md:text-lg">
             I have expertise across the complete web development lifecycle.
             Proficient in Node.js and Express for backend development, React and
             Next.js for modern frontend applications, and Vue.js for

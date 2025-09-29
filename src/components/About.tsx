@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function About() {
   return (
     <section
-      className="relative mt-8 w-full overflow-hidden rounded-[100px] bg-primaryDark pt-20 md:mt-0"
+      className="relative mt-8 w-full overflow-hidden rounded-[100px] border border-white/0 bg-primaryDark pt-20 dark:border-offwhite/50 md:mt-0"
       id="about"
     >
       {/* overlay image */}

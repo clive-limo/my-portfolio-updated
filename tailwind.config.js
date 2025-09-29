@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "class",
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     fontSize: {
@@ -49,6 +50,7 @@ module.exports = {
         accentGreen: "#3BF686",
         accentOrange: "#f57920",
         textLight: "#344054",
+        offwhite: "#fefefe",
       },
     },
   },
