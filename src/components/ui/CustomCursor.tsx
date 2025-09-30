@@ -23,12 +23,12 @@ export default function CustomCursor() {
         style={{
           top: `${pos.y}px`,
           left: `${pos.x}px`,
-          borderWidth: "2px",
+          borderWidth: "1px",
           borderColor: "#ffffff70",
           transition: "background 0.2s ease-in-out",
         }}
       >
-        <div className="absolute left-1/2 top-1/2 size-3 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white mix-blend-difference" />
+        <div className="absolute left-1/2 top-1/2 size-6 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white mix-blend-difference" />
       </div>
     </>
   );

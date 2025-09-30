@@ -17,7 +17,7 @@ export default function ProjectsCard({
   technologies,
 }: IProjectCardProps) {
   return (
-    <div className="relative flex flex-col rounded-[50px] border border-white/0 bg-primaryDark dark:border-offwhite/50">
+    <div className="relative flex flex-col overflow-hidden rounded-[50px] border border-white/0 bg-primaryDark dark:border-offwhite/50">
       {/* description */}
       <div className="flex flex-col p-6 md:px-10 md:pt-10">
         <h2 className="font-lufga text-2xl font-bold md:text-3xl">{title}</h2>
@@ -31,9 +31,9 @@ export default function ProjectsCard({
           {technologies.map((tech) => (
             <p
               key={`tech-${title}`}
-              className="shrink-0 rounded-lg bg-gradient-to-r from-accentBlue to-accentGreen p-2 text-sm font-bold"
+              className="shrink-0 rounded-2xl bg-gradient-to-br from-accentOrange to-orange-800 p-2 text-sm font-bold"
             >
-              {tech}
+              #{tech}
             </p>
           ))}
         </div>
@@ -43,7 +43,7 @@ export default function ProjectsCard({
         <Link
           target="_blank"
           href={url}
-          className="group absolute right-5 top-5 my-auto flex flex-row justify-end rounded-full border border-white p-3"
+          className="group absolute right-5 top-5 my-auto flex flex-row justify-end rounded-full border border-white p-3 transition-all duration-500 hover:-rotate-45 hover:border-accentGreen hover:bg-accentGreen/20"
           rel="noopener noreferer"
         >
           <IoMdArrowForward className="my-auto text-2xl font-bold group-hover:scale-105 group-hover:text-accentGreen" />
@@ -55,6 +55,10 @@ export default function ProjectsCard({
           </p>{" "}
         </div>
       )}
+      <div className="pointer-events-none absolute inset-0 overflow-hidden opacity-30">
+        <div className="absolute -right-20 -top-20 size-64 rounded-full bg-blue-300 blur-3xl" />
+        <div className="absolute -bottom-20 -left-20 size-64 rounded-full bg-orange-300 blur-3xl" />
+      </div>
     </div>
   );
 }

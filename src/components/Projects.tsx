@@ -13,6 +13,19 @@ export default function Projects() {
         </div>
         <div className="mt-5 flex flex-col gap-3 lg:grid lg:grid-cols-2 lg:gap-8">
           <ProjectsCard
+            title="Echo Journal"
+            description="A startup that provides a platform for users to find and book laundry services, streamlining the process of finding reliable and affordable laundry services."
+            url="https://journal-app-web-xi.vercel.app/"
+            complete
+            technologies={[
+              "Vue.js",
+              "TypeScript",
+              "Nest JS",
+              "PostgresSQL",
+              "Tailwind CSS",
+            ]}
+          />
+          <ProjectsCard
             title="Fuahub"
             description="A startup that provides a platform for users to find and book laundry services, streamlining the process of finding reliable and affordable laundry services."
             url="https://fuahub.com/"
@@ -28,9 +41,16 @@ export default function Projects() {
             ]}
           />
           <ProjectsCard
+            title="Prolox Solutions Web"
+            description="A custom-built ecommerce application for a logistics company called Prolox, providing a seamless user experience and optimized logistics operations."
+            url="https://prolox.co.ke/"
+            complete
+            technologies={["Next.js", "TypeScript", "Tailwind CSS", "Percy"]}
+          />
+          <ProjectsCard
             title="Chess Mind"
             description="A multi-modal AI-powered chess analysis tool that utilizes the YOLO image recognition algorithm and a Large Language Model to analyze chess moves and make predictions, providing insights for chess enthusiasts and professionals."
-            url="https://github.com/abdihamid/chess-mind"
+            url="https://github.com/clive-limo/chess-ai"
             complete
             technologies={["Python", "TensorFlow", "YOLO", "LLM"]}
           />
@@ -51,26 +71,6 @@ export default function Projects() {
               "TypeScript",
               "Tailwind CSS",
               "Storybook",
-            ]}
-          />
-          <ProjectsCard
-            title="Prolox Solutions"
-            description="A custom-built ecommerce application for a logistics company called Prolox, providing a seamless user experience and optimized logistics operations."
-            url="https://prolox.co.ke/"
-            complete
-            technologies={["Next.js", "TypeScript", "Tailwind CSS", "Percy"]}
-          />
-          <ProjectsCard
-            title="Not Reddit"
-            description="A social news aggregation and discussion platform, built to exercise full-stack development skills and demonstrate understanding of web development best practices."
-            url="https://prolox.co.ke/"
-            complete={false}
-            technologies={[
-              "Next.js",
-              "TypeScript",
-              "PostgreSQL",
-              "PrismaORM",
-              "Tailwind CSS",
             ]}
           />
         </div>

@@ -63,7 +63,7 @@ export default function About() {
         </div>
         <div className="">
           <Image
-            src="/assets/images/clive-portrait.png"
+            src="/assets/images/clive-portrait-glasses.png"
             alt="about profile image"
             height={200}
             width={200}

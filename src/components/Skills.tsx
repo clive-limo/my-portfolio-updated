@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import { FaDocker, FaNodeJs, FaReact, FaVuejs } from "react-icons/fa";
 import {} from "react-icons/ri";
-import { SiMongodb } from "react-icons/si";
+
+import SkillsShowcase from "./ui/SkillsDisplay";
 
 export const Skills = () => {
   return (
@@ -38,62 +38,7 @@ export const Skills = () => {
             administration and AWS cloud architecture for scalable
             infrastructure design and deployment.
           </p>
-          <div className="my-16 flex flex-row flex-wrap justify-between gap-8">
-            <div className="flex flex-col items-center">
-              <h2 className="text-left font-lufga text-2xl font-semibold text-textLight md:text-[32px]">
-                Frontend
-              </h2>
-              <div className="flex flex-row gap-4">
-                <FaReact
-                  size={42}
-                  className="text-primaryDark/50 transition-colors hover:text-accentOrange"
-                />
-                <FaVuejs
-                  size={42}
-                  className="text-primaryDark/50 transition-colors hover:text-accentOrange"
-                />
-              </div>
-            </div>
-            <div className="flex flex-col items-center">
-              <h2 className="text-left font-lufga text-2xl font-semibold text-textLight md:text-[32px]">
-                Backend
-              </h2>
-              <div className="flex flex-row gap-4">
-                <FaNodeJs
-                  size={42}
-                  className="text-primaryDark/50 transition-colors hover:text-accentOrange"
-                />
-                <FaDocker
-                  size={42}
-                  className="text-primaryDark/50 transition-colors hover:text-accentOrange"
-                />
-                <SiMongodb
-                  size={42}
-                  className="text-primaryDark/50 transition-colors hover:text-accentOrange"
-                />
-                {/* <FaDjango size={42} /> */}
-                {/* <FaLaravel size={42} /> */}
-              </div>
-            </div>
-            <div className="flex flex-col items-center">
-              <h2 className="text-left font-lufga text-2xl font-semibold text-textLight md:text-[32px]">
-                Native
-              </h2>
-              <div className="flex flex-row gap-4">
-                {/* react native logo */}
-                <div className="h-12 w-20">
-                  <FaReact
-                    size={38}
-                    className="mx-auto text-primaryDark/50 transition-colors hover:text-accentOrange"
-                  />
-                  <p className="text-center text-xs font-semibold text-textLight/60">
-                    React Native
-                  </p>
-                </div>
-                {/* <FaFlutter size={42} /> */}
-              </div>
-            </div>
-          </div>
+          <SkillsShowcase />
         </div>
       </div>
     </section>
