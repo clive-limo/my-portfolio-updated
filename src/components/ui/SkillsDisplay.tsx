@@ -70,7 +70,7 @@ export default function SkillsShowcase() {
       <div className="mx-auto max-w-6xl">
         {/* Header with hover cue */}
         <div className="mb-3 text-center">
-          <h1 className="mb-4 font-lufga text-xl font-bold text-offwhite md:text-2xl">
+          <h1 className="mb-4 font-lufga text-xl font-bold text-primaryDark dark:text-offwhite md:text-2xl">
             Technical Skills
           </h1>
         </div>
