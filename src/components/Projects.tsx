@@ -14,7 +14,7 @@ export default function Projects() {
         <div className="mt-5 flex flex-col gap-3 lg:grid lg:grid-cols-2 lg:gap-8">
           <ProjectsCard
             title="Echo Journal"
-            description="A startup that provides a platform for users to find and book laundry services, streamlining the process of finding reliable and affordable laundry services."
+            description="A multimodal journaling web app that allows users to capture their thoughts and experiences through text, voice, and images, providing a seamless and intuitive journaling experience."
             url="https://journal-app-web-xi.vercel.app/"
             complete
             technologies={[
