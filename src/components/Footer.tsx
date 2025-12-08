@@ -87,7 +87,7 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                href="https://twitter.com/your_username"
+                href="https://www.linkedin.com/in/clive-limo-66aa881a3/"
                 target="_blank"
                 rel="noreferrer"
               >

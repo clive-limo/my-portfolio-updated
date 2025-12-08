@@ -1,12 +1,22 @@
 export const recentPositions = [
   {
+    company: "Natively AI",
+    title: "Full Stack Engineer",
+    start: "October, 2025",
+    end: "Present",
+    tasks:
+      "Migrating legacy codebases to newer, scalable architectures while building end-to-end product features and internal tools that support business operations and platform workflows.",
+    location: "Remote, San Francisco",
+    employmentType: "internship",
+  },
+  {
     company: "Kitrel LLC",
     title: "Full Stack Engineer",
     start: "September, 2023",
-    end: "Present",
+    end: "June, 2025",
     tasks:
       "Developing and maintaining robust web and mobile applications utilizing Vue.js, React Native, and Node.js within an AWS infrastructure. Building RESTful APIs using Express.js to deliver scalable and efficient solutions.",
-    location: "Houston, Texas",
+    location: "Remote, Houston",
     employmentType: "Full-time",
   },
   {

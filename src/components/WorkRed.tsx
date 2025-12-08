@@ -1,5 +1,7 @@
 "use client";
 
+import { IoCalendarOutline, IoLocationOutline } from "react-icons/io5";
+
 import { recentPositions } from "@/utils/data";
 
 interface IProps {
@@ -27,11 +29,22 @@ export function JobCardsRed({
       {/* Company Info */}
       <div className="order-1 flex flex-1 flex-col gap-2 lg:order-1 lg:gap-3">
         <h1 className="text-left font-lufga text-xl font-semibold text-textLight dark:text-offwhite sm:text-2xl lg:text-[28px] xl:text-[32px]">
-          {`${company}-${location}`}
+          {`${company}`}
         </h1>
-        <p className="font-lufga text-sm text-textLight/50 dark:text-offwhite/80 sm:text-base lg:text-lg">
-          {start} - {end}
-        </p>
+        <div className="flex flex-row items-center gap-4 text-accentOrange ">
+          <span className="flex flex-row">
+            <IoLocationOutline />
+            <p className="font-lufga text-sm text-textLight dark:text-offwhite/80 sm:text-base lg:text-lg">
+              {location}
+            </p>
+          </span>
+          <span className="flex flex-row gap-1">
+            <IoCalendarOutline />
+            <p className="font-lufga text-sm  text-textLight dark:text-offwhite/80 sm:text-base lg:text-lg">
+              {start} - {end}
+            </p>
+          </span>
+        </div>
       </div>
 
       {/* Timeline Separator */}
@@ -41,27 +54,33 @@ export function JobCardsRed({
           {/* line */}
           <div
             className={`h-0 flex-1 border-t-2 border-dashed ${
-              index % 2 === 0 ? "border-accentOrange" : "border-black"
+              index % 2 === 0
+                ? "border-accentOrange/50"
+                : "border-black dark:border-offwhite/50"
             }`}
           />
           {/* circle */}
           <div
             className={`mx-3 size-8 shrink-0 rounded-full border-2 p-1 sm:size-10 ${
               index % 2 === 0
-                ? "border-dashed border-accentOrange"
-                : "border-dashed border-black"
+                ? "border-dashed border-accentOrange/50"
+                : "border-dashed border-black dark:border-offwhite/50"
             }`}
           >
             <div
               className={`size-full rounded-full ${
-                index % 2 === 0 ? "bg-accentOrange" : "bg-black"
+                index % 2 === 0
+                  ? "bg-accentOrange/50"
+                  : "bg-black dark:bg-offwhite/50"
               }`}
             />
           </div>
           {/* line */}
           <div
             className={`h-0 flex-1 border-t-2 border-dashed ${
-              index % 2 === 0 ? "border-accentOrange" : "border-black"
+              index % 2 === 0
+                ? "border-accentOrange/50"
+                : "border-black dark:border-offwhite/50"
             }`}
           />
         </div>
